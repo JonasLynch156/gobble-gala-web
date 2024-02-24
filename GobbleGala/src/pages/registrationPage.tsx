@@ -1,5 +1,6 @@
 import turkeyLogo from '.././assets/turkey.svg'
 import { Button } from "@mui/material";
+import { ApplyButton } from '../components/applyButton';
 
 
 function Register() {
@@ -11,37 +12,10 @@ return (
             <h2 style={{ marginLeft: '10px' }}>GobbleGala</h2>
         </div>
         <form>
-        <Button variant="contained"
-            sx={{
-                ":hover": {
-                    bgcolor: "#D35A5F",
-                    color: "white",
-                    border: 'none',
-                  },
-                borderRadius: 50,
-                backgroundColor: '#A84448',
-                stroke: 'none',
-            }}
-        >
-            Register as Caterer
-        </Button>
+        <ApplyButton text='Apply as Caterer' onClick={() => {}}/>
         <br></br>
         <br></br>
-        <Button variant="contained"
-            sx={{
-                ":hover": {
-                    bgcolor: "#D35A5F",
-                    color: "white",
-                    border: 'none',
-                  },
-                borderRadius: 50,
-                backgroundColor: '#A84448',
-                stroke: '0px',
-                borderWidth: '0px',
-            }}
-        >
-            Register as Host
-        </Button>
+        <ApplyButton text='Apply as Host' onClick={() => {}}/>
         </form>
     </div>
 );

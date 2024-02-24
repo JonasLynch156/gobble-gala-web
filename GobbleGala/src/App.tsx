@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import turkeyLogo from './assets/turkey.svg'
-import { EventCard } from './components/eventCard'
-import './App.css'
-import Register from './pages/registrationPage'
+import { useState } from 'react';
+import turkeyLogo from './assets/turkey.svg';
+import { EventCard } from './components/eventCard';
+import './App.css';
+import Register from './pages/registrationPage';
 
 function App() {
 
@@ -11,10 +11,8 @@ function App() {
       <div className="App">
         <Register />
       </div>
-      <EventCard/>
     </>
-    
-  )
+  );
 }
 
-export default App
+export default App;
