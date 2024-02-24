@@ -32,6 +32,8 @@ export const EventCard = (props: {
             letterSpacing: '0.5px',
             lineHeight: '24px',
             fontWeight: '400',
+            maxWidth: '700px',
+            minWidth: '600px'
             }}>
                 <NamePFP name={hostName} pfp={hostPFP}/>
                 <Tags names={tags} />
