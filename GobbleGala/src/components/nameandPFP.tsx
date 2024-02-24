@@ -14,13 +14,8 @@ export const NamePFP = (props: {name: string, pfp: string}) => {
             }}>
                 <Avatar alt={`Profile Picure: ${name}`} src={pfp}></Avatar>
                 <Typography sx={{
-                    color: '#E7E7E7',
-                    fontFamily: 'Montserrat',
                     fontSize: '14px',
                     fontStyle: 'normal',
-                    fontWeight: '400',
-                    lineHeight: '24px', /* 171.429% */
-                    letterSpacing: '0.5px'
                 }}>{name}</Typography>
             </Box>
             )
