@@ -1,6 +1,4 @@
-import { useState } from 'react';
-import turkeyLogo from './assets/turkey.svg';
-import { EventCard } from './components/eventCard';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Register from './pages/registrationPage';
 import { CatererViewPage } from './pages/catererViewPage';
@@ -9,9 +7,13 @@ function App() {
 
   return (
     <>
-      <div className="App">
-        <CatererViewPage />
-      </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Register />}></Route>
+        {/* The below route does not exist.*/}
+        <Route path='cater-dashboard' element={<CatererViewPage />}></Route>
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
