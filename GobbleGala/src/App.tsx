@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Register from './pages/registrationPage';
 import { CatererViewPage } from './pages/catererViewPage';
+import { CatererRegistration } from './pages/catererRegistration';
 
 function App() {
 
@@ -10,8 +11,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Register />}></Route>
-        {/* The below route does not exist.*/}
+        <Route path='cater-register' element={<CatererRegistration />}></Route>
         <Route path='cater-dashboard' element={<CatererViewPage />}></Route>
+        {/* <Route path='host-register' element={<HostRegistration />}></Route>
+        <Route path='host-dashboard' element={<HostViewPage />}></Route> */}
       </Routes>
     </BrowserRouter>
     </>
