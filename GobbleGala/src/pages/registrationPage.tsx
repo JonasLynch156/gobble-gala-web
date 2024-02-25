@@ -15,7 +15,6 @@ return (
             <h2 style={{ marginLeft: '10px' }}>GobbleGala</h2>
         </div>
         <form>
-            {/* These routes do not exist.*/}
         <RegisterButton text='Register as Caterer' width='400px' onClick={() => handleClick("/cater-register")}/>
         <br></br>
         <br></br>
