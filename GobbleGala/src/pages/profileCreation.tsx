@@ -4,8 +4,11 @@ import React from "react";
 import { RegisterButton } from "../components/registerButton";
 import turkeyLogo from '../assets/turkey.svg'
 import { StyledTextField } from "../components/styledTextField";
+import { useNavigate } from "react-router-dom";
 
-export const HostRegister = () => {
+export const ProfileCreation = (props: {isHost: boolean}) => {
+    const {isHost} =props;
+    const navigate = useNavigate();
     return (
         <Box sx={{
             display:'flex',
@@ -20,7 +23,7 @@ export const HostRegister = () => {
                 display: 'flex',
                 flexDirection: 'row',
                 gap: '11px',
-                marginTop: '130px',
+                marginTop: '100px',
                 alignContent: 'center',
                 alignSelf: 'center',
             }}>
@@ -80,9 +83,10 @@ export const HostRegister = () => {
                         placeholder="78236"
                         focused/>
                 </Box>
+                 {!isHost ? (<StyledTextField label='Business Name' placeholder="Business" focused/>): null}
             </Box>
             <Box sx={{alignContent: 'center'}}>
-            <RegisterButton width={'700px'} text={'register'} onClick={() => {}}></RegisterButton></Box>
+            <RegisterButton width={'700px'} text={'register'} onClick={isHost? () => {navigate('/host-dashboard')} : () => {navigate('/cater-dashboard')}}></RegisterButton></Box>
         </Box>
     );
 }
