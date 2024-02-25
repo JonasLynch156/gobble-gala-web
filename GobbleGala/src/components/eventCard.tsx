@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import '@fontsource/montserrat'
 import { NamePFP } from "./nameandPFP";
 import { Tags } from "./tags";
-import { ApplyButton } from "./applyButton";
+import { RegisterButton } from "./registerButton";
 
 
 export const EventCard = (props: {
@@ -45,7 +45,7 @@ export const EventCard = (props: {
                     textDecorationLine: 'underline'
                 }}>Location: {location}</Typography>
                 {cardtype !== 'caterBooked' ? (
-                    <ApplyButton 
+                    <RegisterButton 
                     text={cardtype === 'host' ? 'View Available Caterers' : 'Request to Cater'}
                     onClick={() => {}} />
                 ) :(

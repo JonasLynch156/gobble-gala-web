@@ -1,6 +1,6 @@
 import turkeyLogo from '.././assets/turkey.svg'
 import { Button } from "@mui/material";
-import { ApplyButton } from '../components/applyButton';
+import { RegisterButton } from '../components/registerButton';
 
 
 function Register() {
@@ -12,10 +12,10 @@ return (
             <h2 style={{ marginLeft: '10px' }}>GobbleGala</h2>
         </div>
         <form>
-        <ApplyButton text='Apply as Caterer' onClick={() => {}}/>
+        <RegisterButton text='Register as Caterer' onClick={() => {}}/>
         <br></br>
         <br></br>
-        <ApplyButton text='Apply as Host' onClick={() => {}}/>
+        <RegisterButton text='Register as Host' onClick={() => {}}/>
         </form>
     </div>
 );
