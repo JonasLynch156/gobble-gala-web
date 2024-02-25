@@ -1,13 +1,15 @@
-import { useState } from 'react'
-import turkeyLogo from './assets/turkey.svg'
 import './App.css'
+import Register from './pages/registrationPage'
 
 function App() {
 
   return (
     <>
-      <img src={turkeyLogo} className="gobbieLogo" alt="Gobbie the gobble gala turkey" />
+      <div className="App">
+        <Register />
+      </div>
     </>
+    
   )
 }
 
