@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-export const RegisterButton = (props: {text: string, onClick: () => void}) => {
-    const {text, onClick} = props;
+export const RegisterButton = (props: {text: string, onClick: () => void, width?: string}) => {
+    const {text, onClick, width} = props;
     return (
         <Button variant="contained"
             sx={{
@@ -15,6 +15,8 @@ export const RegisterButton = (props: {text: string, onClick: () => void}) => {
                 backgroundColor: '#A84448',
                 stroke: '0px',
                 borderWidth: '0px',
+                width: width ?? '100%'
+                
             }}
             onClick={onClick}
         >

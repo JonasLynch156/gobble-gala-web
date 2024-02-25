@@ -16,10 +16,10 @@ return (
         </div>
         <form>
             {/* These routes do not exist.*/}
-        <RegisterButton text='Register as Caterer' onClick={() => handleClick("/cater-register")}/>
+        <RegisterButton text='Register as Caterer' width='400px' onClick={() => handleClick("/cater-register")}/>
         <br></br>
         <br></br>
-        <RegisterButton text='Register as Host' onClick={() => handleClick("/host-register")}/>
+        <RegisterButton text='Register as Host' width='400px' onClick={() => handleClick("/host-register")}/>
         </form>
     </div>
 );
