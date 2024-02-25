@@ -1,7 +1,8 @@
 // This page will be the one the caterers can see with all the
 // events on it.
-import { Avatar, Box, SvgIcon } from "@mui/material";
-import React from "react";
+import { Avatar, Box, InputAdornment, SvgIcon, TextField } from "@mui/material";
+import React from 'react';
+import SearchIcon from "@mui/icons-material/Search";
 import { EventCard } from "../components/eventCard";
 
 // Example cards for this page
@@ -67,6 +68,25 @@ export const CatererViewPage = () => {
                 <Avatar/>
             </Box>
             
+            <TextField
+            id="searchbar"
+            sx={{
+                color: '#AFAFAF', 
+                width: '600px', 
+                background: '#2D1213',
+                border: '1px solid #3E191A',
+                borderRadius: '50px',
+                input: {color: '#AFAFAF'},
+                alignSelf: 'center',
+            }}
+            InputProps={{
+                startAdornment: (
+                    <InputAdornment position="start">
+                        <SearchIcon sx={{color: '#AFAFAF'}}/>
+                    </InputAdornment>
+                ),
+            }}
+            ></TextField>
             <Box sx={{
                 display: "flex",
                 flexDirection: "column",
