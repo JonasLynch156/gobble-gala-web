@@ -1,5 +1,4 @@
 import turkeyLogo from '.././assets/turkey.svg'
-import { Button } from "@mui/material";
 import { RegisterButton } from '../components/registerButton';
 
 
@@ -7,7 +6,7 @@ function Register() {
     
 return (
     <div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
             <img src={turkeyLogo} className="gobbieLogo" alt="Gobbie the gobble gala turkey" />
             <h2 style={{ marginLeft: '10px' }}>GobbleGala</h2>
         </div>
